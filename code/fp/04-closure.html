@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>closure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        // Math.pow(4, 2)
+        // Math.pow(5, 2)
+        function makePower (power) {
+            return function () {
+                return  Math.pow(number, power)
+            }
+        }
+
+        //求平方
+        let power2 = makerPower(2)
+        let power3 = makerPower(3)
+
+        console.log(power2(4))
+        console.log(power2(5))
+        console.log(power3(4))
+    </script>
+</body>
+</html>>
